@@ -17,6 +17,30 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/AboutView.vue"),
     },
+    {
+      path: "/my-files-view",
+      name: "My Files View",
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import("../views/MyFilesView.vue"),
+    },
+    {
+      path: "/shared-with-me",
+      name: "Shared With Me",
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import("../views/SharedWithMeView.vue"),
+    },
+    {
+      path: "/starred-viwe",
+      name: "Starred",
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import("../views/StarredView.vue"),
+    },
   ],
 });
 

@@ -25,6 +25,7 @@
           :prepend-icon="mdiFolder"
           title="My Files"
           value="myfiles"
+          to="/my-files-view"
         ></v-list-item>
         <v-list-item
           :prepend-icon="mdiAccountMultiple"
@@ -39,15 +40,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <v-container>
-        <v-icon :icon="mdiVuetify"></v-icon>
-        <v-icon :icon="mdiCursorPointer"> </v-icon>
-        <v-btn class="ma-2" color="primary">
-          Accept
-          <v-icon end :icon="mdiCheckboxMarkedCircle"></v-icon>
-        </v-btn>
-        Content area</v-container
-      >
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>

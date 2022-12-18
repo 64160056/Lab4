@@ -17,7 +17,6 @@ import { mdiCursorDefaultClickOutline } from "@mdi/js";
         ><FancyButton
           >Click Me
           <template #tall>
-            
             <v-icon :icon="mdiCursorDefaultClickOutline"
           /></template>
         </FancyButton>

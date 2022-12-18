@@ -12,9 +12,9 @@
     <v-navigation-drawer expand-on-hover rail permanent>
       <v-list>
         <v-list-item
-          prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
-          title="Sandra Adams"
-          subtitle="sandra_a88@gmailcom"
+          prepend-avatar="https://reg.buu.ac.th/registrar/getstudentimage.asp?id=64160056"
+          title="Pasinee Rukpromrach"
+          subtitle="64160056@go.buu.ac.th"
         ></v-list-item>
       </v-list>
 
@@ -31,7 +31,7 @@
           :prepend-icon="mdiAccountMultiple"
           title="My Profile"
           value="shared"
-          to="/shared-with-me"
+          to="/my-profile"
         ></v-list-item>
         <v-list-item
           :prepend-icon="mdiStar"

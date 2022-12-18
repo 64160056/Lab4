@@ -29,7 +29,7 @@
         ></v-list-item>
         <v-list-item
           :prepend-icon="mdiAccountMultiple"
-          title="Shared with me"
+          title="My Profile"
           value="shared"
           to="/shared-with-me"
         ></v-list-item>

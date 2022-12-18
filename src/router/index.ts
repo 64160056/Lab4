@@ -26,12 +26,12 @@ const router = createRouter({
       component: () => import("../views/MyFilesView.vue"),
     },
     {
-      path: "/shared-with-me",
-      name: "Shared With Me",
+      path: "/my-profile",
+      name: "My Profile",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import("../views/SharedWithMeView.vue"),
+      component: () => import("../views/MyProfile.vue"),
     },
     {
       path: "/starred-viwe",

@@ -22,6 +22,9 @@ function changeRating(index: number, reting: number) {
   console.log("action " + index + ":" + reting);
   frameList.value[index].rating = reting;
 }
+const orderList = computed(() => {
+  return [...frameList.value].sort((n1, n2) => n2.rating - n1.rating);
+});
 </script>
 
 <template>
@@ -48,7 +51,7 @@ function changeRating(index: number, reting: number) {
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(item, index) of frameList" :key="index">
+            <tr v-for="(item, index) of orderList" :key="index">
               <td>{{ index + 1 }}</td>
               <td>{{ item.name }}</td>
               <td>{{ item.rating }}</td>
